@@ -1,4 +1,4 @@
-import suma, resta, multiplicacion
+import suma, resta, multiplicacion, division
 
 def calculadora():
     
@@ -7,10 +7,11 @@ def calculadora():
 1 - Sumar
 2 - Restar
 3 - Multiplicación
-4 - Salir
+4 - División
+5 - Salir
 """))
 
-        if n == 4:
+        if n == 5:
             print("Saliendo...")
             break
 
@@ -23,6 +24,8 @@ def calculadora():
             print("El resultado es", resta.resta(a, b))
         elif n == 3:
             print("El resultado es", multiplicacion.multiplicacion(a, b))
+        elif n == 4:
+            print("El resultado es", division.division(a, b))
         else:
             print("Opción no válida")
 
