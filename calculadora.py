@@ -25,6 +25,9 @@ def calculadora():
         elif n == 3:
             print("El resultado es", multiplicacion.multiplicacion(a, b))
         elif n == 4:
+            if b == 0:
+                print("No divida números por 0")
+                continue
             print("El resultado es", division.division(a, b))
         else:
             print("Opción no válida")
